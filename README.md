@@ -14,3 +14,5 @@ En la carpeta IMAGENES se guardará las imágenes necesarias a la hora de cargar
 
 La carpeta RESPALDO servirá para hacer copias de seguridad de los archivos necesarios.
 
+La carpeta Implementacion-Hibernate tendrá todos los archivos necesarios para la implementación y gestión de la base de datos 
+con Hibernate.
