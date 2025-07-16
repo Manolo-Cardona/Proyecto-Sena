@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-07-2025 a las 23:09:40
+-- Tiempo de generación: 16-07-2025 a las 07:42:27
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -144,7 +144,7 @@ CREATE TABLE `tratamiento` (
 --
 
 CREATE TABLE `usuario` (
-  `id_usuario` int(5) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `nombre_usuario` varchar(70) NOT NULL,
   `apellido_usuario` varchar(70) NOT NULL,
   `documento_usuario` int(15) NOT NULL,
@@ -161,7 +161,8 @@ INSERT INTO `usuario` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `docu
 (3, 'Juan', 'Torres Beltrán', 940213455, 'juantorre456@gmail.com'),
 (4, 'Sofia', 'Gutierrez Bernal', 1023542103, 'sofiabernal@vitalsalud.com'),
 (5, 'Cristian', 'Zapata Fernández', 43641091, 'cristianzapata@vitalsalud.com'),
-(6, 'Angela', 'Ortega Jimenéz', 910533122, 'angelaortega@vitalsalud.com');
+(6, 'Angela', 'Ortega Jimenéz', 910533122, 'angelaortega@vitalsalud.com'),
+(7, 'Juan', 'David Mendoza', 1955411405, 'juan000david@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -220,6 +221,16 @@ ALTER TABLE `tratamiento`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
